@@ -1,0 +1,127 @@
+<!DOCTYPE HTML><!--Indica que el siguiente documento es HTML-->
+<html lang="es"><!--Indica que esta escrito en castellano--><head><!--Indica especificaciones del archivo-->
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <title>Ejercicio8</title>
+    <!--Metadato-->
+    <!--Metadatos de los documentos HTML5-->
+    <meta name="author" content="Adrián Vega">
+    <meta name="description" content="Ejercicio que muestra usando una API datos meteorológicos">
+    <meta name="keywords" content="api,javascript,jquery,meteorológicos,meteorología">
+    <!--Añadimos ventana grafica-->
+    <!--Definición de la ventana gráfica-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio8.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio8.js"></script>
+</head>
+<body>
+    <h1>Ejercicio 8</h1>
+    <p>Ejercicio que muestra datos meteorologicos</p>
+    <form>
+        <input type="button" name="mostrar" value="mostrar datos" onclick="ej8.mostrar();">
+    </form>
+    <main><section><h2>Ciudad:Oviedo</h2>
+<ul>
+<li><img alt="icono del tiempo en Oviedo" src="https://openweathermap.org/img/w/04n.png"></li>
+<li>País: ES</li>
+<li>Latitud: 43.3603 grados</li>
+<li>Longitud: -5.8448 grados</li>
+<li>Temperatura: 11.74 grados Celsius</li>
+<li>Temperatura máxima: 11.97 grados Celsius</li>
+<li>Temperatura mínima: 10.71 grados Celsius</li>
+<li>Presión: 1014 milibares</li>
+<li>Humedad: 81 %</li>
+<li>Amanece a las: 8:41:13</li>
+<li>Oscurece a las: 17:47:50</li>
+<li>Dirección del viento: 209 grados</li>
+<li>Velocidad del viento: 0.75 metros/segundo</li>
+<li>Hora de la medida: 20:15:01</li>
+<li>Fecha de la medida: 6/12/2022</li>
+<li>Descripción: nubes</li>
+<li>Visibilidad: 10000 metros</li>
+<li>Nubosidad: 88 %</li></ul>
+</section><section><h2>Ciudad:Gijón</h2>
+<ul>
+<li><img alt="icono del tiempo en Gijón" src="https://openweathermap.org/img/w/04n.png"></li>
+<li>País: ES</li>
+<li>Latitud: 43.5357 grados</li>
+<li>Longitud: -5.6615 grados</li>
+<li>Temperatura: 12.96 grados Celsius</li>
+<li>Temperatura máxima: 13.47 grados Celsius</li>
+<li>Temperatura mínima: 12.22 grados Celsius</li>
+<li>Presión: 1016 milibares</li>
+<li>Humedad: 86 %</li>
+<li>Amanece a las: 8:41:04</li>
+<li>Oscurece a las: 17:46:31</li>
+<li>Dirección del viento: 234 grados</li>
+<li>Velocidad del viento: 1.27 metros/segundo</li>
+<li>Hora de la medida: 20:14:55</li>
+<li>Fecha de la medida: 6/12/2022</li>
+<li>Descripción: muy nuboso</li>
+<li>Visibilidad: 10000 metros</li>
+<li>Nubosidad: 77 %</li></ul>
+</section><section><h2>Ciudad:Avilés</h2>
+<ul>
+<li><img alt="icono del tiempo en Avilés" src="https://openweathermap.org/img/w/04n.png"></li>
+<li>País: ES</li>
+<li>Latitud: 43.5547 grados</li>
+<li>Longitud: -5.9248 grados</li>
+<li>Temperatura: 13.05 grados Celsius</li>
+<li>Temperatura máxima: 13.43 grados Celsius</li>
+<li>Temperatura mínima: 12.66 grados Celsius</li>
+<li>Presión: 1017 milibares</li>
+<li>Humedad: 80 %</li>
+<li>Amanece a las: 8:42:11</li>
+<li>Oscurece a las: 17:47:31</li>
+<li>Dirección del viento: 0 grados</li>
+<li>Velocidad del viento: 0 metros/segundo</li>
+<li>Hora de la medida: 20:14:54</li>
+<li>Fecha de la medida: 6/12/2022</li>
+<li>Descripción: muy nuboso</li>
+<li>Visibilidad: 10000 metros</li>
+<li>Nubosidad: 75 %</li></ul>
+</section><section><h2>Ciudad:Madrid</h2>
+<ul>
+<li><img alt="icono del tiempo en Madrid" src="https://openweathermap.org/img/w/04n.png"></li>
+<li>País: ES</li>
+<li>Latitud: 40.4165 grados</li>
+<li>Longitud: -3.7026 grados</li>
+<li>Temperatura: 10.39 grados Celsius</li>
+<li>Temperatura máxima: 11.48 grados Celsius</li>
+<li>Temperatura mínima: 8.59 grados Celsius</li>
+<li>Presión: 1016 milibares</li>
+<li>Humedad: 92 %</li>
+<li>Amanece a las: 8:23:29</li>
+<li>Oscurece a las: 17:48:26</li>
+<li>Dirección del viento: 0 grados</li>
+<li>Velocidad del viento: 0.51 metros/segundo</li>
+<li>Hora de la medida: 20:14:22</li>
+<li>Fecha de la medida: 6/12/2022</li>
+<li>Descripción: muy nuboso</li>
+<li>Visibilidad: 6000 metros</li>
+<li>Nubosidad: 75 %</li></ul>
+</section><section><h2>Ciudad:Mieres</h2>
+<ul>
+<li><img alt="icono del tiempo en Mieres" src="https://openweathermap.org/img/w/04n.png"></li>
+<li>País: ES</li>
+<li>Latitud: 43.25 grados</li>
+<li>Longitud: -5.7667 grados</li>
+<li>Temperatura: 11.03 grados Celsius</li>
+<li>Temperatura máxima: 11.3 grados Celsius</li>
+<li>Temperatura mínima: 9.53 grados Celsius</li>
+<li>Presión: 1017 milibares</li>
+<li>Humedad: 82 %</li>
+<li>Amanece a las: 8:40:33</li>
+<li>Oscurece a las: 17:47:53</li>
+<li>Dirección del viento: 201 grados</li>
+<li>Velocidad del viento: 0.41 metros/segundo</li>
+<li>Hora de la medida: 20:16:40</li>
+<li>Fecha de la medida: 6/12/2022</li>
+<li>Descripción: nubes</li>
+<li>Visibilidad: 10000 metros</li>
+<li>Nubosidad: 99 %</li></ul>
+</section></main>
+
+</body></html>
